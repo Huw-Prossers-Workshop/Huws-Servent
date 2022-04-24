@@ -19,9 +19,8 @@ module.exports = async (client, Discord) => {
             commandsArray.push(command)
 
             client.on("ready", () => {
-                client.guilds.cache.get("841085263266447400").commands.set(commandsArray) // set to the guild/server id
+                client.guilds.cache.get("872172580893765763").commands.set(commandsArray) // set to the guild/server id
             });
         }
     }
 }
-
