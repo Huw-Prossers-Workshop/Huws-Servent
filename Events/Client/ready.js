@@ -8,7 +8,8 @@ module.exports = {
      * @param {Client} client 
      */
     execute(client) {
-        console.log("The bot is online...")
+        console.log("Bot: Online ")
+        console.log("")
         client.user.setActivity("Huw Prosser", {
             type: "WATCHING",
         });

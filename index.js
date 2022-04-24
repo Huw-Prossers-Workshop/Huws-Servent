@@ -1,10 +1,10 @@
 const { Client, Collection } = require('discord.js');
 const Discord = require('discord.js')
-const { Token } = require('./config.json');
+const { token, bot_owner_ID } = require('./config.json');
 
 const client = new Discord.Client({
     intents: [
-        131071
+        8
     ]
 })
 
@@ -15,4 +15,4 @@ client.commands = new Collection();
 });
 
 
-client.login(Token);
+client.login(token);
