@@ -3,6 +3,7 @@ const { CommandInteraction, Client } = require("discord.js");
 module.exports = {
     name: "emitt",
     description: "Event Emitter",
+    permission: "",
     options: [
         {
             name: "member",

@@ -3,6 +3,7 @@ const { Client, CommandInteraction, MessageEmbed} = require("discord.js");
 module.exports = {
     name: "faq",
     description: "Shows the FAQ of the server.",
+    permission: "",
     
     /**
      * 
