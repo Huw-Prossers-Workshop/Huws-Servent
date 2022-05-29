@@ -3,6 +3,7 @@ const { Client, CommandInteraction, MessageEmbed} = require("discord.js");
 module.exports = {
     name: 'ping',
     description: "CHECK BOTS LATENCY",
+    permission: "",
     /**
      * 
      * @param {Client} client 
