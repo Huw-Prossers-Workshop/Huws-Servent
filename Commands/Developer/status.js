@@ -10,6 +10,10 @@ module.exports = {
      * @param {Client} client 
      */
     execute(interaction, client) {
-        
+        client.user.setActivity({
+            status: "online",
+            type: "WATCHING",
+            name: "Huw Prosser's Workshop"
+        })
     }
 } 
