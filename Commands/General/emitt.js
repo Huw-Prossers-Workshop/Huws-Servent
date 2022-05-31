@@ -3,7 +3,7 @@ const { CommandInteraction, Client } = require("discord.js");
 module.exports = {
     name: "emitt",
     description: "Event Emitter",
-    permission: "",
+    permission: "ADMINISTRATOR",
     options: [
         {
             name: "member",
@@ -27,18 +27,18 @@ module.exports = {
      * @param {CommandInteraction} interaction 
      * @param {Client} client 
      */
-    execute(interaction,client ) {
+    execute(interaction, client) {
         const choices = interaction.options.getString("member");
 
         switch(choices) {
             case "guildMemberAdd" : {
                 client.emit("guildMemberAdd", interaction.member)
-                interaction.followUp({content: "Emitted the event.", ephemeral: true})
+                interaction.reply({content: "Emitted the event.", ephemeral: true})
             }
             break;
             case "guildMemberRemove" : {
                 client.emit("guildMemberRemove", interaction.member)
-                interaction.followUp({content: "Emitted the event.", ephemeral: true})
+                interaction.reply({content: "Emitted the event.", ephemeral: true})
             }
             break;
         }
